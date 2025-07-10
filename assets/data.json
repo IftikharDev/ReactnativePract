@@ -1,0 +1,16 @@
+{
+  "faqs": [
+    {
+      "question": "What is this badge for?",
+      "answer": "It represents your verified contribution to the platform."
+    },
+    {
+      "question": "How long does approval take?",
+      "answer": "Typically 3–5 working days."
+    },
+    {
+      "question": "Do I need to upload documents?",
+      "answer": "Yes, identity and proof of work are required."
+    }
+  ]
+}
