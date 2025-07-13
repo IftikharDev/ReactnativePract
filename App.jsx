@@ -6,6 +6,7 @@ import {
   StyleSheet,
   useColorScheme,
   StatusBar,
+  ScrollView,
 } from 'react-native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import NewHome from './screens/NewHome';
@@ -14,12 +15,16 @@ import FaqScreen from './screens/FaqScreen';
 const Stack = createNativeStackNavigator();
 const App = () => {
   return (
-    <NavigationContainer>
-      <Stack.Navigator screenOptions={{ headerShown: false }}>
-        <Stack.Screen name="Home" component={NewHome} />
-        <Stack.Screen name="Faq" component={FaqScreen} />
-      </Stack.Navigator>
-    </NavigationContainer>
+    <SafeAreaView>
+      <ScrollView>
+        <NavigationContainer>
+          <Stack.Navigator screenOptions={{ headerShown: false }}>
+            <Stack.Screen name="Home" component={NewHome} />
+            <Stack.Screen name="Faq" component={FaqScreen} />
+          </Stack.Navigator>
+        </NavigationContainer>
+      </ScrollView>
+    </SafeAreaView>
   );
 };
 
