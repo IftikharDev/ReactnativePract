@@ -1,16 +1,24 @@
 {
   "faqs": [
     {
-      "question": "What is this badge for?",
-      "answer": "It represents your verified contribution to the platform."
+      "question": "What is TravelerHUB?",
+      "answer": "TravelerHUB is a mobile app that helps you explore tourist destinations like the Sundarbans with guides, info, and trip planning features."
     },
     {
-      "question": "How long does approval take?",
-      "answer": "Typically 3–5 working days."
+      "question": "Do I need internet to use the app?",
+      "answer": "Yes, an internet connection is required to load maps, guides, and updated tourist information."
     },
     {
-      "question": "Do I need to upload documents?",
-      "answer": "Yes, identity and proof of work are required."
+      "question": "Can I book a tour through the app?",
+      "answer": "Currently, TravelerHUB provides information and guides. Booking features will be added soon."
+    },
+    {
+      "question": "Is the information about places verified?",
+      "answer": "Yes, we collect data from reliable sources including local tourism boards and experienced travelers."
+    },
+    {
+      "question": "Can I contribute or suggest new spots?",
+      "answer": "Yes! You can suggest new places or edits through the app's feedback section. All contributions are reviewed before publishing."
     }
   ]
 }

@@ -3,25 +3,35 @@ import React from 'react';
 import { View, TouchableOpacity, Image, StyleSheet } from 'react-native';
 
 const Footer = () => {
-  const Navigation= useNavigation();
-  const handleNavigation = ()=>{
-    Navigation.navigate('NewHome');
-  }
+  const navigation = useNavigation();
+
+  const handleNavigation = () => {
+    navigation.navigate('Home'); 
+  };
+
+  const handleFaqNavigation = () => {
+    navigation.navigate('Faq'); 
+  };
+
   return (
     <View style={styles.footerContainer}>
       <TouchableOpacity onPress={handleNavigation}>
         <Image source={require('../assets/home.png')} style={styles.icon} />
       </TouchableOpacity>
+
       <TouchableOpacity>
         <Image source={require('../assets/loud.png')} style={styles.icon} />
       </TouchableOpacity>
+
       <TouchableOpacity>
         <Image source={require('../assets/plus.png')} style={styles.icon} />
       </TouchableOpacity>
+
       <TouchableOpacity>
         <Image source={require('../assets/message.png')} style={styles.icon} />
       </TouchableOpacity>
-      <TouchableOpacity>
+
+      <TouchableOpacity onPress={handleFaqNavigation}>
         <Image source={require('../assets/list.png')} style={styles.icon} />
       </TouchableOpacity>
     </View>
@@ -30,7 +40,6 @@ const Footer = () => {
 
 const styles = StyleSheet.create({
   footerContainer: {
-    flex: '1',
     flexDirection: 'row',
     justifyContent: 'space-around',
     backgroundColor: '#1D1D1D',

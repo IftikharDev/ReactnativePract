@@ -3,7 +3,7 @@ import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 
 const FaqItem = ({ question, answer }) => {
   console.log(answer);
-
+  
   const [open, setOpen] = useState(false);
 
   const toggleOpen = () => {
