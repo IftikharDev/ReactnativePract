@@ -6,7 +6,8 @@ const MyComponent = () => {
   return (
     <View>
       <Card style={styles.card}>
-        <Card.Cover source={{ uri: 'https://picsum.photos/700' }} />
+        <Card.Cover source={{ uri: 'https://porompath.com/wp-content/uploads/2025/06/WhatsApp-Image-2025-06-03-at-21.16.45_320124bd.jpg' }} />
+       
       </Card>
     </View>
   );

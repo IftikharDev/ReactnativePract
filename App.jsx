@@ -11,13 +11,16 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import NewHome from './screens/NewHome';
 import { NavigationContainer } from '@react-navigation/native';
 import FaqScreen from './screens/FaqScreen';
+import Footer from './components/Footer';
 const Stack = createNativeStackNavigator();
 const App = () => {
   return (
+    
     <NavigationContainer>
       <Stack.Navigator screenOptions={{ headerShown: false }}>
         <Stack.Screen name="Home" component={NewHome} />
         <Stack.Screen name="Faq" component={FaqScreen} />
+       
       </Stack.Navigator>
     </NavigationContainer>
   );

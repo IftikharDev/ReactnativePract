@@ -1,10 +1,15 @@
+import { useNavigation } from '@react-navigation/native';
 import React from 'react';
 import { View, TouchableOpacity, Image, StyleSheet } from 'react-native';
 
 const Footer = () => {
+  const Navigation= useNavigation();
+  const handleNavigation = ()=>{
+    Navigation.navigate('NewHome');
+  }
   return (
     <View style={styles.footerContainer}>
-      <TouchableOpacity>
+      <TouchableOpacity onPress={handleNavigation}>
         <Image source={require('../assets/home.png')} style={styles.icon} />
       </TouchableOpacity>
       <TouchableOpacity>
